@@ -9,4 +9,4 @@ if __name__ == "__main__":
         group_id="consumer-group-a")
     print("starting the consumer")
     for msg in consumer:
-        print("Registered User = {}".format(json.loads(msg.value)))
+        print(f"Registered User = {json.loads(msg.value)}")
